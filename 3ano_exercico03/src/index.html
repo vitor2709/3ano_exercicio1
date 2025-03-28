@@ -1,33 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../dist/styles/main.css">
-    <title>Exercicio 03</title>
+    <title>Salao de beleza</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <div class="navbar">
-        <div><strong>beauty</strong><span style="color: #2aaf68;">salon.</span></div>
-        <div>
-            <a href="#" class="active">Início</a>
-            <a href="#">Sobre</a>
-            <a href="#">Serviços</a>
-            <a href="#">Depoimentos</a>
-            <a href="#">Contato</a>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="text">
+    <header>
+        <nav class="navbar">
+            <div class="logo">beauty<span>salon.</span></div>
+            <ul class="menu">
+                <li><a href="home">Início</a></li>
+                <li><a href="about">Sobre</a></li>
+                <li><a href="services">Serviços</a></li>
+                <li><a href="contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-text">
             <h1>Saúde natural para os seus cabelos</h1>
             <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
-            <a href="#" class="button">Agendar um horário</a>
+            <button class="btn">Agendar um horário</button>
         </div>
-        <div class="image-container">
-            <img src="image.png" alt="Cabeleireira atendendo cliente">
+        <div class="hero-image">
+            <img src="img/imagem 1.png" alt="Mulher secando o cabelo de cliente">
         </div>
-    </div>
+    </section>
+    
 
+
+    <section class="sobre">
+        <div class="container">
+            <div class="imagem">
+                <img src="img/img 2.png" alt="Equipe do salão">
+            </div>
+            <div class="texto">
+                <h2>Sobre nós</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis arcu quis nisi luctus...</p>
+                <p>In placerat, felis vitae sodales dictum, lacus quam pretium mi, ut pretium urna turpis eu dui...</p>
+                <p>Quisque id aliquam elit. Suspendisse congue pharetra maximus...</p>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <section class="servicos">
+        <div class="container">
+            <h2>Serviços</h2>
+            <p>Com mais de 10 anos no mercado, o <span class="destaque">Beautysalon</span> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais</p>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="img/img 1 servi.png" alt="Ícone terapia capilar">
+                    <h3>Terapia capilar</h3>
+                    <p>Terapia completa para couro cabeludo e fios, protegendo todos os tipos de cabelos, inclusive os longos e finos.</p>
+                </div>
+
+                <div class="card">
+                    <img src="img/img 2 servi.png" alt="Ícone cortes">
+                    <h3>Cortes</h3>
+                    <p>A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos.</p>
+                </div>
+
+                <div class="card">
+                    <img src="img/img 3 servi.png" alt="Ícone tratamentos">
+                    <h3>Tratamentos</h3>
+                    <p>O Beautysalon conta com diversos tratamentos naturais e totalmente veganos, para qualquer tipo de cabelo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section class="depoimentos">
+        <div class="container">
+            <h2>Depoimentos de quem já passou por aqui</h2>
+
+            <div class="slider">
+                <div class="card">
+                    <p><span class="quote">❝</span> Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.</p>
+                    <div class="user">
+                        <img src="img/jp.png" alt="Wanessa Souza">
+                        <span>Wanessa Souza</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <p><span class="quote">❝</span> Minha mãe frequenta o salão há anos e me levou um dia para conhecer. Minha experiência foi incrível, eu continuo fazendo a terapia capilar e isso salvou o meu cabelo. Adoro todos os profissionais do Beautysalon.</p>
+                    <div class="user">
+                        <img src="img/igona.png" alt="Luna Falcão">
+                        <span>Luna Falcão</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+
+
+<div class="container">
+    <section class="contact-section">
+        <h2>Entre em contato com a gente!</h2>
+            <p>Entre em contato com a Beauty Salon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
+        <div class="contact-info">
+            <p><img src="img/telefone.png" alt=""> <a href="tel:+5511998486754">11 99848-6754</a></p>
+            <p><img src="img/localização.png" alt=""> <a href="https://goo.gl/maps/" target="_blank">R. Amauri Souza, 346</a></p>
+            <p><img src="img/e-mail.png" alt=""> <a href="mailto:contato@beautysalon.com">contato@beautysalon.com</a></p>
+        </div>
+    </section>
+</div>
+    <footer class="footer">
+        <div class="logo">beautysalon.</div>
+            <p>©2021 BeautySalon. Todos os direitos reservados</p>
+        <div class="social-icons">
+            <a href="#" target="_blank"><img src="img/instagram.png" alt=""></a>
+            <a href="#" target="_blank"><img src="img/facebook.png" alt=""></a>
+            <a href="#" target="_blank"><img src="img/youtube.png" alt=""></a>
+        </div>
+    </footer>
 </body>
 </html>
